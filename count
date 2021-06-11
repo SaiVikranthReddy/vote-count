@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int bjp=0,cong=0,oth=0,ch;
+    do
+    {
+        cout<<"n1.bjp\n2.congress\n3.others\n4.exit"<<endl;
+        cout<<"Enter your choice"<<endl;
+        cin>>ch;
+        switch(ch)
+        {
+            case 1:bjp++;break;
+            case 2:cong++;break;
+            case 3:oth++;break;
+            case 4:break;
+            default:cout<<" Invalid voice"<<endl;
+        }
+    }while(ch!=4);
+    cout<<" BJP count= "<<bjp<<endl;
+    cout<<" Congress count= "<<cong<<endl;
+    cout<<" others count= "<<oth<<endl;
+}
